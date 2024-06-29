@@ -20,8 +20,7 @@ export default function page({}: Props) {
       <div className="flex flex-col items-center">
         <MyAvatar />
         <h1 className="text-md font-semibold text-gray-800 text-center mt-8">
-          Hello! It's me, 
-          <span className="font-bold">Tegar Levta Anggana.</span>
+          Hello! It's me, <span className="font-bold">Tegar Levta Anggana.</span>
         </h1>
         <p className="mt-2 text-gray-600 text-sm w-80 text-center">
           I develop apps.
