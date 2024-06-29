@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Noto_Sans_Mono } from "next/font/google";
 import "./globals.css";
+import { Button } from "@/components/ui/button";
+import NavBar from "@/components/cust/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
+const notoSansMono = Noto_Sans_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +19,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      {/* <body className={notoSansMono.className}> */}
+        {/* <div className="border-4 border-blue-500">
+        </div> */}
+        <NavBar />
+        <div>{children}</div>
+      </body>
     </html>
   );
 }
